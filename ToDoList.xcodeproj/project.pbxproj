@@ -16,6 +16,8 @@
 		9FA67C4B2A2BB81D00DF81C1 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA67C4A2A2BB81D00DF81C1 /* ToDoListUITestsLaunchTests.swift */; };
 		9FA67C582A2BB83D00DF81C1 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA67C572A2BB83D00DF81C1 /* ToDoItem.swift */; };
 		9FA67C5C2A2BBADC00DF81C1 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA67C5B2A2BBADC00DF81C1 /* NewToDoView.swift */; };
+		9FA67C5E2A2C23D200DF81C1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA67C5D2A2C23D200DF81C1 /* Persistence.swift */; };
+		9FA67C642A2C256400DF81C1 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA67C622A2C256400DF81C1 /* ToDoList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		9FA67C4A2A2BB81D00DF81C1 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FA67C572A2BB83D00DF81C1 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		9FA67C5B2A2BBADC00DF81C1 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
+		9FA67C5D2A2C23D200DF81C1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9FA67C632A2C256400DF81C1 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		9FA67C212A2BB81D00DF81C1 = {
 			isa = PBXGroup;
 			children = (
+				9FA67C5D2A2C23D200DF81C1 /* Persistence.swift */,
 				9FA67C2C2A2BB81D00DF81C1 /* ToDoList */,
 				9FA67C3D2A2BB81D00DF81C1 /* ToDoListTests */,
 				9FA67C472A2BB81D00DF81C1 /* ToDoListUITests */,
@@ -104,6 +109,7 @@
 				9FA67C572A2BB83D00DF81C1 /* ToDoItem.swift */,
 				9FA67C312A2BB81D00DF81C1 /* Assets.xcassets */,
 				9FA67C332A2BB81D00DF81C1 /* Preview Content */,
+				9FA67C622A2C256400DF81C1 /* ToDoList.xcdatamodeld */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -264,9 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA67C302A2BB81D00DF81C1 /* ContentView.swift in Sources */,
+				9FA67C642A2C256400DF81C1 /* ToDoList.xcdatamodeld in Sources */,
 				9FA67C2E2A2BB81D00DF81C1 /* ToDoListApp.swift in Sources */,
 				9FA67C582A2BB83D00DF81C1 /* ToDoItem.swift in Sources */,
 				9FA67C5C2A2BBADC00DF81C1 /* NewToDoView.swift in Sources */,
+				9FA67C5E2A2C23D200DF81C1 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +599,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9FA67C622A2C256400DF81C1 /* ToDoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FA67C632A2C256400DF81C1 /* ToDoList.xcdatamodel */,
+			);
+			currentVersion = 9FA67C632A2C256400DF81C1 /* ToDoList.xcdatamodel */;
+			path = ToDoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9FA67C222A2BB81D00DF81C1 /* Project object */;
 }
