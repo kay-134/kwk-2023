@@ -48,6 +48,13 @@ struct NewToDoView: View {
             .padding()
             
             Button("Schedule Notification"){
+                //to add the name to the list
+                self.addTask(title: self.title, isImportant: self.isImportant)
+                self.showNewTask = false
+                nameToAddToList = title
+                namesToEncourage.append(title)
+                
+                //to add the name to the notification
                 namesToEncourage.append(title)
                 nameToAddToList = namesToEncourage.randomElement()!
                 let content = UNMutableNotificationContent()
@@ -59,9 +66,10 @@ struct NewToDoView: View {
                 let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
                 
                 UNUserNotificationCenter.current().add(request)
-            }
+                
+            }.alert("\(title) ", isPresented: $presentAlert, actions: {})
             
-            Button(action: {
+            /*Button(action: {
                 self.addTask(title: self.title, isImportant: self.isImportant)
                 self.showNewTask = false
                 nameToAddToList = title
@@ -75,9 +83,10 @@ struct NewToDoView: View {
                     .font(Font.custom("Baskerville-Bold", size: 20))
             }
             
+                */
             
-            
-        }.alert("\(title) ", isPresented: $presentAlert, actions: {})
+        }
+               // .alert("\(title) ", isPresented: $presentAlert, actions: {})
         
         
         
@@ -85,7 +94,7 @@ struct NewToDoView: View {
     }
     
     //function for enabling notification
-    private func addTask(title: String, isImportant: Bool = false) {
+   private func addTask(title: String, isImportant: Bool = false) {
         
         let task = ToDo(context: context)
         task.id = UUID()

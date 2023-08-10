@@ -17,7 +17,7 @@ struct ContentView: View {
     @State var name = ""
     @FetchRequest(
             entity: ToDo.entity(), sortDescriptors: [ NSSortDescriptor(keyPath: \ToDo.id, ascending: false) ])
-        
+    
     var toDoItems: FetchedResults<ToDo>
     
     var body: some View {
@@ -32,12 +32,22 @@ struct ContentView: View {
              
             Button(action: {
                 self.showNewTask = true
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge , .sound]){ success, error in
+                    if success{
+                        print("All set")
+                    }
+                    else if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
                
             }) {
                 Text("+")
                     .font(Font.custom("Baskerville-Bold", size: 100))
                     .fontWeight(.black)
                     .foregroundColor(Color.black)
+                
+                
                 
                 }
             
@@ -46,7 +56,7 @@ struct ContentView: View {
             Spacer()
         }
         
-        Button("Request Permission"){
+        /*Button("Request Permission"){
             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge , .sound]){ success, error in
                 if success{
                     print("All set")
@@ -55,8 +65,9 @@ struct ContentView: View {
                     print(error.localizedDescription)
                 }
             }
-        }
+       } */
         
+        //moved 
        /* Button("Schedule Notification"){
           
             name = namesToEncourage.randomElement()!
