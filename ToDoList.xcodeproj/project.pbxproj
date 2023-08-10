@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61B16DEE2A8435F800670DDC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B16DED2A8435F800670DDC /* SplashView.swift */; };
 		9FA67C2E2A2BB81D00DF81C1 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA67C2D2A2BB81D00DF81C1 /* ToDoListApp.swift */; };
 		9FA67C302A2BB81D00DF81C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA67C2F2A2BB81D00DF81C1 /* ContentView.swift */; };
 		9FA67C322A2BB81D00DF81C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA67C312A2BB81D00DF81C1 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61B16DED2A8435F800670DDC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		9FA67C2A2A2BB81D00DF81C1 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA67C2D2A2BB81D00DF81C1 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		9FA67C2F2A2BB81D00DF81C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				9FA67C2D2A2BB81D00DF81C1 /* ToDoListApp.swift */,
 				9FA67C2F2A2BB81D00DF81C1 /* ContentView.swift */,
+				61B16DED2A8435F800670DDC /* SplashView.swift */,
 				9FA67C5B2A2BBADC00DF81C1 /* NewToDoView.swift */,
 				9FA67C572A2BB83D00DF81C1 /* ToDoItem.swift */,
 				9FA67C312A2BB81D00DF81C1 /* Assets.xcassets */,
@@ -275,6 +278,7 @@
 				9FA67C582A2BB83D00DF81C1 /* ToDoItem.swift in Sources */,
 				9FA67C5C2A2BBADC00DF81C1 /* NewToDoView.swift in Sources */,
 				9FA67C5E2A2C23D200DF81C1 /* Persistence.swift in Sources */,
+				61B16DEE2A8435F800670DDC /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
